@@ -50,18 +50,6 @@ https://aws.amazon.com/cli/
 
 # Other
 
-## Bitbucket
-Generate ssh key and add to Bitbucket.
-```bash
-ssh-keygen -t ed25519 -C "firstname.lastname@resurs.se"
-```
-
-## .gitconfig
-```bash
-[url "ssh://git@code.resurs.loc:7999/"]
-   insteadOf = https://code.resurs.loc/scm/
-```
-
 ## .vimrc
 ```bash
 # Blink cursor on error instead of beeping
@@ -76,7 +64,6 @@ syntax on
 
 ## .zshrc
 ```bash
-export GONOSUMDB="code.resurs.loc"
 
 # Kubernetes
 source <(kubectl completion zsh)
