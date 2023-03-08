@@ -1,15 +1,16 @@
 # Software
 
 ## Visual Studio Code
+
 Suggestions of plugins
 
 * Go
 * Jsonnet Language Server (Grafana)
-* Markdown
 
 https://code.visualstudio.com/
 
 ## JetBrains IntelliJ
+
 Install toolbox and then any other application via the toolbox.
 
 * JetBrains toolbox
@@ -18,6 +19,7 @@ Install toolbox and then any other application via the toolbox.
 https://www.jetbrains.com/toolbox-app/
 
 ## Brew
+
 * brew install kubectl
 * brew install go
 * brew install jsonnet
@@ -25,25 +27,31 @@ https://www.jetbrains.com/toolbox-app/
 * brew install Azure/kubelogin/kubelogin
 * brew install jq
 * brew install gradle
-* brew install openshift-cli
-* brew install node
-* brew install yarn
-* brew install coreutils
 * brew install helm
 
 https://brew.sh/
 
+## nvm
+
+nvm is a version manager for node.js
+
+https://github.com/nvm-sh/nvm
+
+
 ## sdkman
+
 Manages different Java versions.
 
 https://sdkman.io/install
 
 ## Oh My Zsh
+
 Excellent git aliases etc.
 
 https://ohmyz.sh/#install
 
 ## AWS CLI
+
 Amazon.
 
 https://aws.amazon.com/cli/
@@ -51,6 +59,7 @@ https://aws.amazon.com/cli/
 # Other
 
 ## .vimrc
+
 ```bash
 # Blink cursor on error instead of beeping
 set visualbell
@@ -63,8 +72,8 @@ syntax on
 ```
 
 ## .zshrc
-```bash
 
+```bash
 # Kubernetes
 source <(kubectl completion zsh)
 alias k=kubectl
