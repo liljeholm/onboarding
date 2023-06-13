@@ -18,6 +18,17 @@ Install toolbox and then any other application via the toolbox.
 
 https://www.jetbrains.com/toolbox-app/
 
+## Docker
+
+Colima is a good drop-in replacement for Docker.
+
+https://github.com/abiosoft/colima
+
+https://smallsharpsoftwaretools.com/tutorials/use-colima-to-run-docker-containers-on-macos/
+
+* brew install colima
+* brew install docker docker-compose
+
 ## Brew
 
 * brew install kubectl
@@ -57,6 +68,48 @@ Amazon.
 https://aws.amazon.com/cli/
 
 # Other
+
+## Multiple git hosts
+
+### .gitconfig
+
+```bash
+[includeIf "gitdir:~/personal/"]
+    path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/code/"]
+    path = ~/.gitconfig-work
+```
+
+### .gitconfig-personal
+
+```bash
+[user]
+    name = Firstname Lastname
+    email = firstname.lastname@domain.com
+```
+
+### .ssh/config
+
+```bash
+Host another.domain.com
+  HostName another.domain.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+  ServerAliveInterval 600
+  TCPKeepAlive yes
+  IPQoS=throughput
+Host github.com
+  HostName github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/github_id_ed25519
+  ServerAliveInterval 600
+  TCPKeepAlive yes
+  IPQoS=throughput
+
+```
 
 ## .vimrc
 
