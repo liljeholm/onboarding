@@ -114,13 +114,13 @@ Host github.com
 ## .vimrc
 
 ```bash
-# Blink cursor on error instead of beeping
+"Blink cursor on error instead of beeping
 set visualbell
 
-# Show line numbers
+"Show line numbers
 set number
 
-# Turn on syntax highlightning
+"Turn on syntax highlightning
 syntax on
 ```
 
